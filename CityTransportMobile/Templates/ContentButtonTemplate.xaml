@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ControlTemplate x:Key="ContentButtonTemplate">
+        <Border Margin="6" Height="150" Width="420" BorderBrush="White" BorderThickness="3">
+        <Grid Background="Blue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Height="64" Width="64" HorizontalAlignment="Center" Source="{Binding Image}" VerticalAlignment="Center" Grid.Column="0"></Image>
+            <TextBlock FontSize="30" Text="{Binding Path=Text}" VerticalAlignment="Center" TextAlignment="Left" Grid.Column="1"></TextBlock>
+        </Grid>
+        </Border>
+    </ControlTemplate>
+</ResourceDictionary>
